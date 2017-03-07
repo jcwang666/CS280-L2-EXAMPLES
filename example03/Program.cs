@@ -23,6 +23,8 @@ namespace example03
 
             Console.WriteLine(sql);
             Console.WriteLine(xml);
+            int? someInteger = null;
+            Console.WriteLine(someInteger);
         }
     }
 }
