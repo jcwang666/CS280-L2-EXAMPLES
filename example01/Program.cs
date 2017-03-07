@@ -17,13 +17,10 @@ namespace example01
             string userPassword = Console.ReadLine();
             Console.WriteLine("{0} 您好，登入成功 ,{1}", userName, userPassword);
 
-            Console.WriteLine("enter number1");
-            int number1 = 3;
-            Console.WriteLine("enter number2");
-            int number2 = 5;
-
-            int sum = number1 + number2;
-            Console.WriteLine("The Sum = {0}", sum);
+            float floatPI = 3.141592653589793238f;
+            double doublePI = 3.141592653589793238;
+            Console.WriteLine("Float PI is: {0}", floatPI);
+            Console.WriteLine("Double PI is: {0}", doublePI);
         }
     }
 }

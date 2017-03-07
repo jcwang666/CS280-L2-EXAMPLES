@@ -10,7 +10,9 @@ namespace example02
     {
         private static void Main(string[] args)
         {
-            Console.Write("aa");
+            Console.WriteLine(0.15111f + 1.22211f == 1.37322f);
+
+            Console.WriteLine(1.0 / 2.0);
         }
     }
 }
