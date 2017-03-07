@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace example02
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            Console.Write("aa");
         }
     }
 }
