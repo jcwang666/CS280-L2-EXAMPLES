@@ -10,18 +10,28 @@ namespace example04
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("plz enter 1st number");
-            int number1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("plz enter 2st number");
-            int number2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Sum of 1 and 2 = {0}", number1 + number2);
+            int number1 = 0;
+            int number2 = 0;
+            Console.Write("請輸入第一個數字:");
+            try
+            {
+                number1 = int.Parse(Console.ReadLine());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
 
-            //string str = "100.3";
-            //float number = 0.0;
-            //float.TryParse(str, out number);
-
-            //double a = 3.1415926;
-            //float b = (float)a;
+            Console.Write("請輸入第二個數字:");
+            try
+            {
+                number2 = int.Parse(Console.ReadLine());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            Console.WriteLine("{0} + {1} = {2}", number1, number2, number1 + number2);
         }
     }
 }
